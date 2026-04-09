@@ -3,15 +3,15 @@
 ## Machine Learning Approaches to Early Detection of  Parkinson’s Disease Using Speech Analysis Technique
 
 ###  Dataset
-- Publicly accessible Mobile Device Voice Recordings at King's College London (MDVR-KCL) dataset
+- Publicly accessible Mobile Device Voice Recordings at King's College London (MDVR-KCL)
 - Total of 37 participants, 21 healthy controls and 16 PD Patients
-- contains speech recordings from both healthy controls and patients diagnosed with PD, representing a range of disease severities, including early and advanced stages.
-- The recordings were acquired using the “Toggle Recording App” installed on a Moto G4 smartphone, resulting in high-quality audio files with a sampling rate of 44.1 kHz and a bit depth of 16 bits.
-- Participants were instructed to perform two speech tasks.
+-  Speech recordings from healthy controls and PD patients; including early and advanced stages.
+- The recordings were acquired using “Toggle Recording App” installed on a Moto G4 smartphone, resulting in high-quality audio files with a sampling rate of 44.1 kHz and a bit depth of 16 bits.
+- Participants perform two speech tasks.
 - First task, everyone read aloud the standardized paragraph “The North Wind and the Sun.” 
 - some participants were also asked to read an additional technical excerpt titled “Tech. Engin. Computer Applications in Geograph”.
 - The second task involved a spontaneous dialog between the participant and the examiner, during which open-ended questions were posed regarding topics such as local traffic, places of interest, and personal preferences. This format was designed to capture both structured and natural speech patterns.
-- Each audio file is labeled with metadata including the participant ID, Hoehn and Yahr (H&Y) stage, and Unified Parkinson’s Disease Rating Scale (UPDRS) scores for sections II-5 and III-18. For instance, the file name “ID02_pd_1_2_1.wav” refers to participant 02, diagnosed with PD at H&Y stage 1 (indicative of early-stage PD), with a UPDRS II-5 score of 2 and a UPDRS III-18 score of 1.
+- Each audio file is labeled with metadata including the participant ID, Hoehn and Yahr (H&Y) stage, and Unified Parkinson’s Disease Rating Scale (UPDRS) scores for sections II-5 and III-18. For example, the file name “ID02_pd_1_2_1.wav” refers to participant 02, diagnosed with PD at H&Y stage 1 (indicative of early-stage PD), with a UPDRS II-5 score of 2 and a UPDRS III-18 score of 1.
 
 
 
