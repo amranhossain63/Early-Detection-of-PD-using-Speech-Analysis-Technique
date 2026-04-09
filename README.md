@@ -7,6 +7,13 @@
 #### Feature extraction class containing the methods to extract features from voice sample
 
 
+##### Feature Extract contain funtion
+- **split_into_chunks**  Split audio signal into small chunks based on : must be silent for at least half a second and consider it silent if quieter than -16 dBFS
+
+
+
+
+
 
 
 
