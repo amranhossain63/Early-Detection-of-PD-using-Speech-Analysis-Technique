@@ -58,11 +58,12 @@ def extract_features_from_chunks(folder_path, label):
             folder_path = os.path.join(root, dir)
             folder_path = r'%s' % folder_path + "/*.wav"
             print(folder_path)
+            # call the function to extract the features from the folder
             df_hc = f.extract_features_from_folder(folder_path)
             # print(df_hc)
             df_all.append(df_hc)
             # print(df_all_hc)
-    # call the function to extract the features from the folder
+
     df_all = pd.concat(df_all)
     df_all['label'] = label
     return df_all
@@ -76,6 +77,7 @@ def extract_mfccfeatures_from_chunks(folder_path, label):
             folder_path = os.path.join(root, dir)
             folder_path = r'%s' % folder_path + "/*.wav"
             print(folder_path)
+            # call the function to extract the features from the folder
             df_hc = f.extract_mfcc_from_folder(folder_path)
             # print(df_hc)
             df_all.append(df_hc)
@@ -114,7 +116,7 @@ split_into_chunks()
 
 
 
-#df_mel_spectrogram = mel_spectrogram_features()
+
 df_all_features = pd.merge(acoustic_features(), mfcc_features(), how="left", on="voiceID")
 #df_all_features = acoustic_features().merge(mfcc_features(), on="voiceID", how="left")\
 #                                     .merge(gtcc_features(), on="voiceID", how="left")
