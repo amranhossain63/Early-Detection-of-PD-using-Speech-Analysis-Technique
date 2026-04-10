@@ -34,11 +34,15 @@
 
 
 
-##### Feature Extract contain funtion
+##### Feature Extract funtion
 - **split_into_chunks**  Split audio signal into small chunks based on : must be silent for at least half a second and consider it silent if quieter than -16 dBFS
-- **extract_mfccfeatures_from_chunks** extract MFCC from smaller audio files.
+- **extract_mfccfeatures_from_chunks** extract MFCC from smaller audio files. (13 Coefficients )
 - **extract_features_from_chunks**   Extract Audio features. 
 
+
+#### GTCC Feature Extraction
+- Used a separate python file to extract GTCC features
+- 13 Coefficients 
 
 
 
