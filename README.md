@@ -17,7 +17,8 @@
 
 
 #### Feature extraction class containing the methods to extract features from voice sample
-- MFCC : Mel-Frequency Cepstral Coefficients. 
+- MFCC : Mel-Frequency Cepstral Coefficients.
+- GTCC : Gammatone Frequency Cepstral Coefficients.
 - Pitch: 'meanF0Hz', Mean of the fundamental frequency	Numerical
 - Pitch: 'stdevF0Hz', SD	Standard deviation of the fundamental frequency	Numerical
 - 'HNR', Mean harmonics-to-noise ratio	Numerical
