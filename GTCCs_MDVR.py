@@ -28,7 +28,7 @@ def process_audio_files(root_folder, label):
     """Recursively process all .wav files in the given root_folder"""
     data = []
 
-    # Walk through all subdirectories
+    # Walk  all subdirectories
     for dirpath, _, filenames in os.walk(root_folder):
         for file_name in filenames:
             if file_name.endswith(".wav"):  # Process only .wav files
@@ -54,15 +54,13 @@ def process_audio_files(root_folder, label):
 
 
 
-# Define main folders for HC (Healthy Control) and PD (Parkinson’s Disease)
-#hc_folder = "MDVR_KCL/ReadText/HC"
-#pd_folder = "MDVR_KCL/ReadText/PD"
+
 
 hc_folder = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/HC"
 pd_folder = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/PD"
 
 
-#r"Dataset_MDVR_KCL/MDVR/ReadText/HC", r"Dataset_MDVR_KCL/MDVR/ReadText/PD"
+
 
 # Ensure paths exist
 if not os.path.exists(hc_folder) or not os.path.exists(pd_folder):
@@ -80,14 +78,12 @@ data = hc_data + pd_data
 if data:
     columns = ["voiceID"] + [f"GTCC_Mean_{i + 1}" for i in range(13)] + [f"GTCC_Std_{i + 1}" for i in
                                                                                     range(13)] + ["label"]
-    #columns = ["voiceID"] + [f"GTCC_MeanFeature{i + 1}" for i in range(13)] + ["label"]
-    #columns = ["voiceID"] + [f"GTCC_STDfeature{i + 1}" for i in range(13)] + ["label"]
+
     df = pd.DataFrame(data, columns=columns)
 
     # Save to CSV
     output_csv = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/MDVRReadText_GTCC_feature_chunks.csv"
-    #output_csv = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/GTCC_Mean_feature_chunks.csv"
-    #output_csv = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/GTCC_Std_feature_chunks.csv"
+
     df.to_csv(output_csv, index=False)
     print(f"Saved GTCC features to {output_csv}")
 else:
