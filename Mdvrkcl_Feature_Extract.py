@@ -109,13 +109,11 @@ def mfcc_features():
 
 
 
-
-
 # run the splitting code
 split_into_chunks()
 
 
-
+# Save CSV 
 
 df_all_features = pd.merge(acoustic_features(), mfcc_features(), how="left", on="voiceID")
 #df_all_features = acoustic_features().merge(mfcc_features(), on="voiceID", how="left")\
