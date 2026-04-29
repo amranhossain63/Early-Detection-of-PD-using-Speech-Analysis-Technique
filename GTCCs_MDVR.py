@@ -54,11 +54,8 @@ def process_audio_files(root_folder, label):
 
 
 
-
-
 hc_folder = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/HC"
 pd_folder = "Dataset_MDVR_KCL/MDVR/ReadText/chunks/PD"
-
 
 
 
