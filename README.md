@@ -55,4 +55,10 @@
 
 
 
-***Keywords:** Parkinson’s disease (PD); machine learning (ML); voice; speech; speaker diarization; spontaneous dialogue 
+***Keywords:** Parkinson’s disease (PD); machine learning (ML); voice; speech; speaker diarization; spontaneous dialogue
+
+
+
+
+#### Cite
+Hossain, Mohammad Amran, Enea Traini, and Francesco Amenta. 2026. "Machine Learning Approaches to Early Detection of Parkinson’s Disease Using Speech Analysis Technique" Neurology International 18, no. 5: 88. https://doi.org/10.3390/neurolint18050088
